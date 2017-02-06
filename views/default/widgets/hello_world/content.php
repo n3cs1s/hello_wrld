@@ -5,7 +5,7 @@ echo "<h1>Hello world</h1>";
 
 $api = new Embedly\Embedly(array('user_agent' => 'Mozilla/5.0 (compatible; mytestapp/1.0)'));
 
-/ Single url
+// Single url
 $objs = $api->oembed('https://habrahabr.ru/post/145946/');
 print_r($objs);
 //$spider = new Spider('http://www.dmoz.org');
