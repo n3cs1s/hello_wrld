@@ -1,0 +1,18 @@
+{
+    "name": "n3cs1s/hello_wrld",
+    "description": "Elgg plugin created with composer",
+    "type": "elgg-plugin",
+    "require": {
+        "embedly/embedly-php": "^0.5.6",
+        "vdb/php-spider": "^0.2.0",
+        "symfony/event-dispatcher": "^3.2"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "P Stepanovych",
+            "email": "pavel.primavera@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
