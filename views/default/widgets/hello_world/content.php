@@ -9,7 +9,7 @@ $api = new Embedly\Embedly(array(
 ));
 
 // Single url
-$objs = $api->oembed('https://habrahabr.ru/post/145946/');
+$objs = $api->oembed('http://kinogo.club/5067-agenty-schit-2-sezon.html');
 print_r($objs);
 //$spider = new Spider('http://www.dmoz.org');
 /*$spider->getDiscovererSet()->set(new XPathExpressionDiscoverer("//div[@id='catalogs']//a"));
