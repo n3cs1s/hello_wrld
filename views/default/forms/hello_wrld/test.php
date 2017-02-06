@@ -1,6 +1,16 @@
 <?php
 
 
-$title = elgg_extract('title', $vars, '');
-echo elgg_view('input/text', array('name' => 'title', 'value' => $title,'class'=>'hello_wrld'));
+if (empty($vars['entity']) || !$vars['entity'] instanceof ElggObject) {
+    return;
+}
+
+$object = $vars['entity'];
+/* @var ElggObject $object */
+
+echo elgg_view('output/url', [
+    'text' => $object->getDisplayName(),
+    'href' => $object->getUrl(),
+    'is_trusted' => true,
+]);
 
