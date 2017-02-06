@@ -11,6 +11,18 @@ $api = new Embedly\Embedly(array(
 // Single url
 $objs = $api->oembed('http://kinogo.club/5067-agenty-schit-2-sezon.html');
 print_r($objs);
+
+
+?>
+<script>
+    elgg.get('ajax/form/hello_wrld/test', {
+  success: function (output) {
+    $('.hello_wrld').html(output);
+  }
+});
+</script>
+
+<?php
 //$spider = new Spider('http://www.dmoz.org');
 /*$spider->getDiscovererSet()->set(new XPathExpressionDiscoverer("//div[@id='catalogs']//a"));
 $spider->getDiscovererSet()->maxDepth = 1;
