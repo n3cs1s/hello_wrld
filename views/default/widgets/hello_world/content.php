@@ -1,5 +1,5 @@
 <?php
-
+elgg_require_js("js/test_ajax");
 echo "<h1>Hello world</h1>";
 
 
