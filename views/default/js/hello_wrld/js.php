@@ -1,5 +1,5 @@
 <script>
-    elgg.get('ajax/form/hello_wrld/test',{
+    elgg.get('ajax/form/hello_wrld/test_ajax',{
   data: {
     guid: 123 // querystring
   },
