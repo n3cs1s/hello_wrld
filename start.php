@@ -14,7 +14,7 @@ elgg_register_event_handler('init', 'system', function() {
 	// @see views.php for view locations
 	//elgg_extend_view('elgg.css', 'css/dropzone/stylesheet');
 	//elgg_extend_view('admin.css', 'css/dropzone/stylesheet');
-
+$dispatcher = new EventDispatcher();
 $dispatcher->addListener('on.scroll', function (Event $event) {
     // will be executed when the foo.action event is dispatched
 });
