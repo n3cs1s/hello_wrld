@@ -22,7 +22,11 @@ print_r($objs);
 });
 </script>
 
+<br />
+<div class='hello_wrld'></div>
 <?php
+
+
 //$spider = new Spider('http://www.dmoz.org');
 /*$spider->getDiscovererSet()->set(new XPathExpressionDiscoverer("//div[@id='catalogs']//a"));
 $spider->getDiscovererSet()->maxDepth = 1;
