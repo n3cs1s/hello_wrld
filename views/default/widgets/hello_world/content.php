@@ -5,8 +5,9 @@ echo "<h1>Hello world</h1>";
 
 $api = new Embedly\Embedly(array('user_agent' => 'Mozilla/5.0 (compatible; mytestapp/1.0)'));
 
+$key= "4ea6ce2594984a5db25642b5b936fd1f";
 // Single url
-$objs = $api->oembed('https://habrahabr.ru/post/145946/');
+$objs = $api->oembed('https://habrahabr.ru/post/145946/',{'key'=>$key});
 print_r($objs);
 //$spider = new Spider('http://www.dmoz.org');
 /*$spider->getDiscovererSet()->set(new XPathExpressionDiscoverer("//div[@id='catalogs']//a"));
