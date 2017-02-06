@@ -18,7 +18,8 @@ elgg_register_event_handler('init', 'system', function() {
 /*$dispatcher->addListener('on.scroll', function (Event $event) {
     // will be executed when the foo.action event is dispatched
 });*/
-	
+
+	elgg_register_ajax_view('forms/hello_wrld/add');
   elgg_register_widget_type([
     'id' => 'hello_world',
     'name' => elgg_echo('widgets:hello:world'),
