@@ -19,17 +19,17 @@ elgg_register_event_handler('init', 'system', function() {
     // will be executed when the foo.action event is dispatched
 });*/
 	// register the JavaScript
-	$js = elgg_get_simplecache_url('js', 'hello_wrld/js');
+	/*$js = elgg_get_simplecache_url('js', 'hello_wrld/js');
 	elgg_register_simplecache_view('js/hello_wrld/js');
 	elgg_register_js('elgg.hello_wrld', $js);
 	
+	*/
 	
-	
-	elgg_register_ajax_view('forms/hello_wrld/test_ajax');
-  elgg_register_widget_type([
+	//elgg_register_ajax_view('forms/hello_wrld/test_ajax');
+ /* elgg_register_widget_type([
     'id' => 'hello_world',
     'name' => elgg_echo('widgets:hello:world'),
     'description' => elgg_echo('widgets:hello:world'),
-]);
+]);*/
   
 });
